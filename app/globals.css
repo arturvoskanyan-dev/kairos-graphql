@@ -76,6 +76,8 @@
   --sidebar-accent-foreground: oklch(0.208 0.042 265.755);
   --sidebar-border: oklch(0.929 0.013 255.508);
   --sidebar-ring: oklch(0.704 0.04 256.788);
+  --color-gold: rgb(255, 210, 32);
+  /* --color-gray: rgb(15, 14, 14); */
 }
 
 .dark {
@@ -112,11 +114,33 @@
   --sidebar-ring: oklch(0.551 0.027 264.364);
 }
 
-@layer base {
+/* @layer base {
   * {
     @apply border-border outline-ring/50;
   }
   body {
     @apply bg-background text-foreground;
   }
+} */
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+body {
+  background: var(--color-zinc-950);
+}
+
+a {
+  cursor: pointer;
+}
+
+a:hover {
+  color: var(--color-gold);
+}
+
+button {
+  cursor: pointer;
 }

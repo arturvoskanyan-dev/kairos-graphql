@@ -12,7 +12,8 @@ describe("Test Header Component", () => {
         // Nav Links
         expect(screen.getByText("Home")).toBeInTheDocument();
         expect(screen.getByText("Anime List")).toBeInTheDocument();
-        // // expect(screen.getByText(""))
+        expect(screen.getByText("Page 3")).toBeInTheDocument();
+        expect(screen.getByText("Page 4")).toBeInTheDocument();
 
         // // Search: Input
         expect(screen.getByPlaceholderText("Search anime...")).toBeInTheDocument();
