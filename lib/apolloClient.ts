@@ -1,0 +1,13 @@
+import { InMemoryCache } from "@apollo/client";
+import { HttpLink } from "@apollo/client";
+import { ApolloClient } from "@apollo/client";
+
+const client = new ApolloClient({
+    link: new HttpLink({
+        uri: "https://graphql.anilist.co",
+        credentials: "same-origin"
+    }),
+    cache: new InMemoryCache()
+})
+
+export default client;
