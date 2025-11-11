@@ -14,6 +14,7 @@ export const GET_TRENDING_ANIME = gql`
         episodes
         coverImage {
           large
+          extraLarge
         }
         startDate {
           year

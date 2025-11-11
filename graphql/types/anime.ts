@@ -9,6 +9,7 @@ export interface Anime {
     episodes?: number | null;
     coverImage: {
         large: string;
+        extraLarge: string;
     };
     startDate: {
         year?: number | null;
