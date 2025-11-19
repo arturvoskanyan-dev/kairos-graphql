@@ -36,7 +36,7 @@ describe("Test Carousel Component", () => {
         const title = await screen.findByText("Naruto");
         const description = await screen.findByText("A ninja story.");
         const img = await screen.findByAltText(/Naruto Image/i);
-        const episodes = await screen.findByText(/220 EP/i);
+        const episodes = await screen.findByText(/EP 220/i);
         // const animeDate = await screen.findByText("")
 
         expect(title).toBeInTheDocument();
