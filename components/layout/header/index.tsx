@@ -4,7 +4,8 @@ import { Search } from "lucide-react";
 export default function Header() {
   return (
     <header className="bg-zinc-950">
-      <div className="max-w-[1920px] h-16 mx-auto w-full flex justify-between items-center gap-12 py-2 px-16">
+      {/* <div className="max-w-[1920px] h-16 mx-auto w-full flex justify-between items-center gap-12 py-2 px-16"> */}
+      <div className="max-w-[1920px] h-16 mx-auto w-full flex justify-between items-center gap-12">
         <div className="flex items-center w-full gap-12">
           <h1 className="text-white text-2xl font-medium">
             Kairos

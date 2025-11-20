@@ -14,6 +14,7 @@ export const trendingAnimeMock = {
                         description: "A ninja story.",
                         duration: 24,
                         episodes: 220,
+                        favourites: 392,
                         coverImage: { large: "/naruto.jpg", extraLarge: "/naruto-extra-large.png" },
                         startDate: { year: 2002, month: 10, day: 3 },
                     },

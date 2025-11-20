@@ -7,6 +7,7 @@ export interface Anime {
     description?: string | null;
     duration?: number | null;
     episodes?: number | null;
+    favourites?: number | null;
     coverImage: {
         large: string;
         extraLarge: string;

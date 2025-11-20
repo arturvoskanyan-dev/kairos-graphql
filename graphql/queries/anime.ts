@@ -12,6 +12,7 @@ export const GET_TRENDING_ANIME = gql`
         description
         duration
         episodes
+        favourites
         coverImage {
           large
           extraLarge
