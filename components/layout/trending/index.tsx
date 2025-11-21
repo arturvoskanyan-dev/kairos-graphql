@@ -14,7 +14,9 @@ export default function Trending({items = []}: {items?: Array<Anime>}) {
                         <div className='flex flex-col gap-4'>
                             <h2 className='text-xl text-white font-medium'>{anime.title.english}</h2>
                             <p className='flex gap-2 text-white'>
-                                <Heart className='cursor-pointer' /> 
+                                <button aria-label='add to favorites'>
+                                    <Heart className='cursor-pointer' /> 
+                                </button>
                                 {anime.favourites}
                             </p>
                         </div>

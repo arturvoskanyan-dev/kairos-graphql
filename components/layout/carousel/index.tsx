@@ -14,7 +14,7 @@ import Description from "../../ui/description";
 export function CarouselPlugin({ items = [] }: { items?: Array<Anime> }) {
     return (
         <Carousel className="w-full max-w-full">
-            <CarouselPrevious className="absolute left-4 z-50" />
+            <CarouselPrevious className="w-12 h-12 absolute left-4 z-50" />
             <CarouselContent>
                 {items?.map((anime) => (
                     <CarouselItem key={anime.id}>
@@ -30,7 +30,7 @@ export function CarouselPlugin({ items = [] }: { items?: Array<Anime> }) {
                                         EP {anime.episodes} - {anime.duration}m
                                     </p>}
                                     {anime.description &&
-                                        <Description description={anime.description} shortLimit={40} expandedLimit={70} />
+                                        <Description description={anime.description} shortLimit={70} expandedLimit={90} />
                                     }
                                 </div>
                             </div>
@@ -38,7 +38,7 @@ export function CarouselPlugin({ items = [] }: { items?: Array<Anime> }) {
                     </CarouselItem>
                 ))}
             </CarouselContent>
-            <CarouselNext className="absolute right-4 z-50" />
+            <CarouselNext className="w-12 h-12 absolute right-4 z-50" />
         </Carousel>
     );
 }
