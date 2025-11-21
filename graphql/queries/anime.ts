@@ -26,3 +26,16 @@ export const GET_TRENDING_ANIME = gql`
     }
   }
 `;
+
+export const GET_GENRES = gql`
+  query GetGenres($genre: [String]) {
+    Page(page: 1, perPage: 3) {
+      media(genre_in: $genre, type: ANIME) {
+        id
+        coverImage {
+          large
+        }
+      }
+    }
+  }
+`;

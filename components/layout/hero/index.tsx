@@ -18,7 +18,7 @@ export default function Hero() {
 
     return (
         // <div>index</div>
-        <div className='flex justify-between gap-12 w-full'>
+        <div className='flex justify-between items-center gap-12 w-full min-h-screen'>
             <CarouselPlugin items={data?.Page.media} />
             <Trending items={data?.Page.media} />
         </div>
