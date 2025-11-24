@@ -19,8 +19,15 @@ export interface Anime {
     };
 }
 
-export interface GetTrendingAnimeData {
+export interface GenreType {
+    id: number;
+    coverImage: { large: string }
+}
+
+export interface PageMedia<T> {
     Page: {
-        media: Anime[];
+        media: Array<T>;
     };
 }
+export type GetTrendingAnimeData = PageMedia<Anime>;
+export type GetGenresData = PageMedia<GenreType>;

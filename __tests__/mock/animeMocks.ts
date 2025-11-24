@@ -1,4 +1,4 @@
-import { GET_TRENDING_ANIME } from "@/graphql/queries";
+import { GET_GENRES, GET_TRENDING_ANIME } from "@/graphql/queries";
 
 export const trendingAnimeMock = {
     request: {
@@ -23,3 +23,25 @@ export const trendingAnimeMock = {
         },
     },
 };
+
+export const genreMock = {
+    request: {
+        query: GET_GENRES,
+        variables: {genre: ["Action"]}
+    },
+    result: {
+        data: {
+            Page: {
+                media: [
+                    {
+                        id: 1,
+                        coverImage: 
+                        { 
+                            large: "https://example.com/action1.jpg" 
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
